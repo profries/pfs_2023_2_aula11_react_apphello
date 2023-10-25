@@ -1,6 +1,8 @@
 import './App.css';
 import Card from './components/Card';
 import Hello from './components/Hello';
+import ListCards from './components/ListCards';
+import produtos from './data/Produtos'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <h3>Descricao</h3>
         <p>Detalhe do produto</p>
       </Card>
+
+      <ListCards lista={produtos}></ListCards>
     </>
   );
 }
